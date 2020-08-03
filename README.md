@@ -12,6 +12,7 @@
 #### 原型类
 
 - Axure，PS，墨刀，蓝湖
+- 
 
 #### 思维脑图
 
@@ -20,3 +21,17 @@
 #### 流程图
 
 Visio，OmniGraffle，processOn
+
+### 环境准备
+
+**win10自带虚拟机**
+
+- Hyper-V
+
+**DOClever**
+
+- mock接口开发测试
+- mock.js
+
+### 前端工程化
+
