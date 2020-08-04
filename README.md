@@ -35,3 +35,25 @@ Visio，OmniGraffle，processOn
 
 ### 前端工程化
 
+前端工程化是指将前端开发的流程规范化，标准化，包括开发流程，技术选型，代码规范，构建发布等，用于提升前端工程师的开发效率和代码质量
+
+#### webpack
+
+**快速创建npm项目**
+
+```javascript
+npm init -y
+```
+
+**安装webpack**
+
+```javascript
+yarn add webpack webpack-cli -D
+```
+
+#### gulp
+
+
+
+
+
