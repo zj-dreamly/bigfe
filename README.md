@@ -37,6 +37,15 @@ Visio，OmniGraffle，processOn
 
 前端工程化是指将前端开发的流程规范化，标准化，包括开发流程，技术选型，代码规范，构建发布等，用于提升前端工程师的开发效率和代码质量
 
+#### npm
+
+- node 包管理工具，不再赘述
+
+#### npx
+
+- npx 想要解决的主要问题，就是调用项目内部安装的模块
+- http://www.ruanyifeng.com/blog/2019/02/npx.html
+
 #### webpack
 
 **快速创建npm项目**
@@ -98,3 +107,7 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 - koa-helmet
 - koa-compress
 - koa-logger
+
+#### 开发热加载
+
+- nodemon
