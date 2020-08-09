@@ -1,0 +1,98 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "config": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "pages/center",
+    "pages/newPost",
+    {
+      "path": "pages/detail",
+      "config": {
+        "navigationBarTitleText": "文章详情",
+        "usingComponents": {
+          "parser": "/static/wxParse/index"
+        }
+      }
+    },
+    {
+      "path": "pages/auth",
+      "config": {
+        "navigationBarTitleText": "授权页面"
+      }
+    },
+    {
+      "path": "packageA/msg",
+      "subPackage": true
+    },
+    {
+      "path": "packageA/hot",
+      "subPackage": true
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#02D199",
+    "borderStyle": "white",
+
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index",
+        "iconPath": "static/images/tab_home_no.png",
+        "selectedIconPath": "static/images/tab_home_yes.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "packageA/msg",
+        "iconPath": "static/images/tab_news_no.png",
+        "selectedIconPath": "static/images/tab_news_yes.png"
+      },
+      {
+        "text": "热门",
+        "pagePath": "packageA/hot",
+        "iconPath": "static/images/tab_popular_no.png",
+        "selectedIconPath": "static/images/tab_popular_yes.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/center",
+        "iconPath": "static/images/tab_my_no.png",
+        "selectedIconPath": "static/images/tab_my_yes.png"
+      }
+    ],
+    "position": "bottom",
+    "custom": true
+  },
+  "preloadRule": {
+    "pages/index": {
+      "network": "all",
+      "packages": ["packageA"]
+    }
+  },
+  "usingComponents": {
+    "van-button": "/static/@vant/weapp/button/index",
+    "van-tabbar": "/static/@vant/weapp/tabbar/index",
+    "van-tabbar-item": "/static/@vant/weapp/tabbar-item/index",
+    "van-icon": "/static/@vant/weapp/icon/index",
+    "van-tab": "/static/@vant/weapp/tab/index",
+    "van-tabs": "/static/@vant/weapp/tabs/index",
+    "van-search": "/static/@vant/weapp/search/index",
+    "van-dialog": "/static/@vant/weapp/dialog/index",
+    "van-uploader": "/static/@vant/weapp/uploader/index",
+    "van-picker": "/static/@vant/weapp/picker/index",
+    "van-field": "/static/@vant/weapp/field/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}
