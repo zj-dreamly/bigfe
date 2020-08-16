@@ -117,3 +117,13 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 - 类库：JQuery，Lodash（Underscore）
 - JS库：React，Vue，Angular，ExtJS，Backbone
 - 工具：Webpack（Build），Jest（Test），ESLint，Template，应用类（Echarts/D3/three）
+
+#### 校验工具
+
+- Vuelidate
+- Veevalidate
+
+#### 工具类
+
+- nodemailer
+- captcha
