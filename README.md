@@ -12,6 +12,7 @@
 #### 原型类
 
 - Axure，PS，墨刀，蓝湖
+- 
 
 #### 思维脑图
 
@@ -53,13 +54,13 @@
 
 **快速创建npm项目**
 
-```shell script
+```javascript
 npm init -y
 ```
 
 **安装webpack**
 
-```shell script
+```javascript
 yarn add webpack webpack-cli -D
 ```
 
@@ -77,7 +78,7 @@ Yeoman 是一种高效、开源的 Web 应用脚手架搭建系统，意在精�
 
 安装
 
-```shell script
+```javascript
 npm install -g yo
 ```
 
@@ -130,37 +131,3 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 
 - nodemailer
 - captcha
-- uuid
-- bcrypt
-- npm-run-all
-- qs
-- lodash
-- moment
-
-### VS code插件
-
-- Node modules Resolve 
-
-### Vue-Router
-
-#### exact-active-class
-
-- linkActiveClass 
-
-- 类型: `string`
-
-- 默认值: `"router-link-exact-active"`
-
-  配置当链接被精确匹配的时候应该激活的 class。注意默认值也是可以通过路由构造函数选项 `linkExactActiveClass` 进行全局配置的。
-
-#### router跳转
-
-- 建议都使用name属性来进行跳转，path如何变更都不会受到影响
-
-- ```javascript
-  <router-link :to="{name: 'user'}">用户</router-link>
-  ```
-
-- ```javascript
-  this.$router.push({ name: 'index' })
-  ```
