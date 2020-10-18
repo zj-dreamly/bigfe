@@ -137,6 +137,7 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 - lodash
 - moment
 - jsonwebtoken
+- dayjs
 
 ### VS code插件
 
@@ -165,3 +166,18 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 - ```javascript
   this.$router.push({ name: 'index' })
   ```
+
+#### :class
+
+Class 与 Style 绑定
+
+#### scoped
+
+```vue
+<style lang="scss" scoped></style>
+```
+
+带上scoped只对当前组件生效，去掉scoped对当前组件及其子组件都有效
+
+#### require.context
+
