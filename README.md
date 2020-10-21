@@ -44,6 +44,10 @@
 
 - node 包管理工具，不再赘述
 
+#### nvm
+
+-  nvm全名node.js version management，顾名思义是一个nodejs的版本管理工具
+
 #### npx
 
 - npx 想要解决的主要问题，就是调用项目内部安装的模块
@@ -138,6 +142,7 @@ Koa是一个全新的web框架，致力于成为web应用和API开发领域中�
 - moment
 - jsonwebtoken
 - dayjs
+- make-dir
 
 ### VS code插件
 
@@ -181,3 +186,10 @@ Class 与 Style 绑定
 
 #### require.context
 
+#### label
+
+label 标签为 input 元素定义标注（标记）。
+
+label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+
+label 标签的 for 属性应当与相关元素的 id 属性相同。
