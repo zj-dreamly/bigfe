@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div
     class="d-flex"
     :class="{'flex-center': align==='center', 'flex-start': align === 'left', 'flex-end': align === 'right'}"
