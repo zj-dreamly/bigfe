@@ -35,6 +35,7 @@
 
 - mock接口开发测试
 - mock.js
+- json server
 
 ### 前端工程化
 
@@ -197,3 +198,44 @@ label 标签的 for 属性应当与相关元素的 id 属性相同。
 #### 三元运算符
 
 当在模板中使用嵌套对象的话，但是在Data中没有定义，可以使用三元运算符进行判断，存在才去获取
+
+#### Websocket
+
+- ws ：实现原生协议，特点是通用性强，性能高，定制性强
+- socket.io：向下兼容协议，适配性强，性能一般
+
+#### SSR
+
+| 分类     | Vue.js                   | Nuxt.js                                      |
+| -------- | ------------------------ | -------------------------------------------- |
+| 框架     | 独立框架                 | 基于vue.js，不仅用于服务端渲染，还进行了丰富 |
+| 生命周期 | 全                       | 只有created，beforeCreated                   |
+| 组件     | router-view，router-link | nuxt, nuxt-child, nuxt-link, client-only     |
+| 路由     | 自定义                   | 由文件名，文件夹自动生成                     |
+| 目录结构 | 自定义                   | 相对限定，不同的文件名不同的默认行为         |
+| 第三方库 | 自定义                   | 需求分浏览器和node测                         |
+| 其他     | cli集成了vuex，router    | prettier UI框架等                            |
+
+- Server-Side Rendering (ssr) 服务端渲染是用户第一次请求刷新页面的时候，由服务端响应HTML字符串，可以省去浏览器端首次渲染的工作，加快首屏显示速度。
+- CSR
+- 更好的SEO
+- 更快的内容到达时间 (time to content)
+- vue & vue-server-renderer2.3.0+
+- Nuxt.js框架
+
+#### Nuxt.js 开发
+
+- 安装：`npx create-nuxt-app <project-name>`
+- 配置vscode插件 vetur
+- 认识 Nuxt 工程化目录
+- SPA应用缺陷
+- Universal Mode
+
+### WebApp
+
+- 类App应用，运行环境是浏览器
+- 可以包一层壳，成为App
+- 常见的混合应用：ionic，cordova，appcan，uni-app
+- 原生应用：ReactNative，flutter
+- 桌面应用：Electron
+

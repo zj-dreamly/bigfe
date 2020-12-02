@@ -71,15 +71,15 @@ class WebSocketServer {
       },
       message: () => {
         // 鉴权拦截
-        // if (!ws.isAuth && this.isAuth) {
-        //   return
-        // }
+        if (!ws.isAuth || !this.isAuth) {
+          return
+        }
         // 消息广播
-        // this.wss.clients.forEach((client) => {
-        //   if (client.readyState === WebSocket.OPEN && client._id === ws._id) {
-        //     this.send(msg)
-        //   }
-        // })
+        this.wss.clients.forEach((client) => {
+          if (client.readyState === WebSocket.OPEN && client._id === ws._id) {
+            this.send(msg)
+          }
+        })
       }
     }
     events[msgObj.event]()
