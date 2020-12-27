@@ -246,6 +246,51 @@ label 标签的 for 属性应当与相关元素的 id 属性相同。
 - svg-sprite
 - svg-sprite-loader
 - normalize.css
-
 - postcss-px-to-viewport
 - postcss-pxtorem
+
+#### 处理微信下拉出现域名信息
+
+- 工具类
+
+  ```javascript
+  export const forbidScroll = (elem) => {
+    let flag = false
+  
+    elem.addEventListener('touchstart', (evt) => {
+      if (elem.contains(evt.target)) {
+        flag = true
+      } else {
+        flag = false
+      }
+    }, false)
+    elem.addEventListener('touchmove', (evt) => {
+      evt.prop = flag
+    })
+  }
+  
+  const handler = (evt) => {
+    if (evt.prop) {
+      evt.preventDefault()
+    }
+  }
+  
+  document.body.removeEventListener('touchmove', handler, { passive: false })
+  document.body.addEventListener('touchmove', handler, { passive: false })
+  
+  ```
+
+  
+
+- 使用
+
+```javascript
+  mounted () {
+    const elem = this.$refs.search
+    window.forbidScroll(elem)
+  },
+```
+
+#### 横竖屏兼容方案
+
+- 媒体查询
